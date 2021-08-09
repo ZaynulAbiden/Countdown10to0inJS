@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down</title>
+</head>
+<style>
+    img {
+        z-index: -1;
+        position: absolute;
+    }
+    
+    #counter {
+        font-size: 100px;
+        color: white;
+        text-shadow: 2px 2px black;
+        padding-top: 70px;
+        padding-left: 240px;
+    }
+</style>
+
+<body>
+    <img src="img1.jpg">
+    <h1 id="counter">10</h1>
+    <script>
+        var counter = document.getElementById("counter")
+        setInterval(function() {
+
+            if (counter.innerHTML > 0)
+                counter.innerHTML -= 1;
+
+
+        }, 1000)
+    </script>
+
+</body>
+
+</html>
